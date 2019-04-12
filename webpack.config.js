@@ -61,6 +61,25 @@ module.exports = {
           },
         ],
       },
+      // for extra credit: added based on https://github.com/tcoopman/image-webpack-loader
+      {
+        test: /\.(gif|png|jpe?g|svg)$/i,
+        use: [
+          'file-loader',
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              optipng: {
+                enabled: false,
+              },
+              pngquant: {
+                quality: '65-90',
+                speed: 4,
+              },
+            },
+          },
+        ],
+      },
     ],
   },
   plugins: [
