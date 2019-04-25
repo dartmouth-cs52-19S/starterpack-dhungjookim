@@ -1,12 +1,9 @@
-import $ from 'jquery';
-import './style.scss';
 import React from 'react';
+import ReactDOM from 'react-dom';
+import './style.scss';
 import {
   BrowserRouter as Router, Route, NavLink, Switch,
 } from 'react-router-dom';
-import ReactDOM from 'react-dom';
-
-$('#main').html('Here we go!');
 
 // Test counter for Starterpack extracted to function
 function counter() {
