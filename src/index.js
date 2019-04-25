@@ -4,8 +4,11 @@ import './style.scss';
 import {
   BrowserRouter as Router, Route, NavLink, Switch,
 } from 'react-router-dom';
+import $ from 'jquery';
 
 // Test counter for Starterpack extracted to function
+// const $ = require('jquery');
+
 function counter() {
   let num = 0;
   setInterval(() => {
